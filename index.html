@@ -23,8 +23,19 @@
 
             <footer>
                 <p>©yetazero 2024-2025</p>
-        </footer>
+            </footer>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backgroundElement = document.querySelector('.background');
+            const highResImage = new Image();
+            highResImage.src = 'bg0.jpg';
+            highResImage.onload = () => {
+                backgroundElement.classList.add('image-loaded');
+            };
+        });
+    </script>
 </body>
 </html>
